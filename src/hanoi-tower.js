@@ -19,6 +19,14 @@ function calculateHanoi(/* disksNumber, turnsSpeed */) {
   // remove line with error and write your code here
 }
 
+function calculateHanoi(disksNumber, turnsSpeed) {
+    const steps = (2 ** disksNumber) - 1;
+    const time = (3600 / turnsSpeed) * steps;
+    return { turns: steps, seconds: Math.floor(time) };
+}
+
 module.exports = {
-  calculateHanoi
+    calculateHanoi
 };
+Footer
+© 2023 GitHub, Inc.
