@@ -22,3 +22,22 @@ function countCats(/* matrix */) {
 module.exports = {
   countCats
 };
+
+
+function countCats(matrix) {
+    let count = 0;
+    for (let i = 0; i < matrix.length; i++) {
+        let arr = matrix[i];
+        arr.forEach((elem) => {
+            if (elem === ('^^')) {
+                count++;
+            }
+            return;
+        });
+    }
+    return count;
+}
+
+module.exports = {
+    countCats
+};
