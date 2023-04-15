@@ -28,5 +28,3 @@ function calculateHanoi(disksNumber, turnsSpeed) {
 module.exports = {
     calculateHanoi
 };
-Footer
-© 2023 GitHub, Inc.
